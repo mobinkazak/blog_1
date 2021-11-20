@@ -1,0 +1,4 @@
+Options -Indexes
+RewriteEngine on
+RewriteRule ^articles/([0-9]*)/([\s\S]*) article.php?pid=$1%{QUERY_STRING}
+

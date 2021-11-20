@@ -1,0 +1,81 @@
+a{
+	text-decoration: none;
+}
+
+#username-error{
+	color: red;
+	display: block;
+}
+
+.required::after{
+	content: " * ";
+	color: red;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__choice{background-color:#007bff;border-color:#006fe6;padding:1px 10px;color:#fff}
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove{color:rgba(255,255,255,.7);}
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove:hover{color:#fff;background-color:#007bff;}
+span.select2-selection.select2-selection--multiple{
+	text-align: left;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__choice__display{
+	cursor: pointer;
+	padding-right: 0px;
+	padding-left: 11px;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove{
+	border-right: 0;
+	padding: 0 0px 0 8px;
+}
+.tooltip{
+	font-family: 'Vazir', sans-serif !important;
+}
+.dropdown-toggle::after {
+    margin-top: -4px;
+    margin-right: 4px;
+}
+.open-menu,.close-menu{
+	cursor: pointer;
+}
+.p-child{
+	width: 100%;
+	display: none;
+}
+.active .a-text{
+	font-weight: bold !important;
+ 	color: #FF6347 !important;
+
+}
+
+.active h5: hover{
+	border: 1px solid #333;
+	color: #FF6347 !important;
+}
+.active2{
+	font-weight: bold;
+	background-color: #FF6347;
+	border-radius: 5px;
+}
+.active2 .b-text{
+
+}
+.active2 .b-text{
+	color :#fff !important;
+}
+.active3{
+	background-color: #FF6347;
+	border-radius: 5px;
+}
+.border_1{
+	color: #222 !important	;
+	background-color: #b55a4a !important;
+}
+button#btn_more:hover{
+	opacity: 1 !important;
+}
+.a_hover:hover{
+	background-color: #b55a4a !important;
+	color: #fff !important	;
+	transition: 0.2s;
+	opacity: 1;
+
+}
