@@ -64,16 +64,12 @@
                     </div><!-- end masonry -->
                   </div>
                 </section>
-                <div class="container">
-                  <div class="col-md-12" style="direction: rtl;">
-                    
-                  </div>
-                </div>
+                
                 <section class="section">
                   <div class="container">
                     
                     <div class="row">
-                      <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
+                      <div class="mb-3 col-lg-9 col-md-12 col-sm-12 col-xs-12">
                         <div class="page-wrapper">
                             <?php
                             $getLastArticle=$frontend->getLastArticle(3);
@@ -114,6 +110,7 @@
                                 ?>
                                 </div><!-- end blog-list -->
                                 <button id="btn_more" class="btn btn-info col-md-12" style="height: 30px;opacity:0.8;cursor: pointer;">مقالات بیشتر</button>
+
                                 <?php 
                                 }else{
                                   ?>
@@ -147,7 +144,7 @@
                               $(document).ready(function(){
                                 var articleCount=3;
                                 $(document).on('click','#btn_more',function(){
-                                articleCount=articleCount+1;
+                                articleCount=articleCount+2;
                                   $('.blog-list').load("ajax.php",{
                                   newArticleCount:articleCount,
                                   // id:$('#id').attr('data-id')

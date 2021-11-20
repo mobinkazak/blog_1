@@ -161,7 +161,7 @@ $url=$frontend->createSeoUrl("articles/$article[id]/$article[title]/");
                             ?>
 
                         </div>
-                        <button id="btn_more" class="btn btn-info col-md-12" style="height: 30px;opacity:0.8;cursor: pointer;">نمایش نظرات بیشتر</button>
+                        <button id="btn_more" class="btn btn-info col-md-12" style="height: 30px;opacity:0.8;cursor: pointer;">نظرات بیشتر</button>
                     <?php }else{
                         ?>
                         <p>در این مقاله نظری ثبت نشده است</p>
