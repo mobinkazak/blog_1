@@ -75,10 +75,12 @@
                     <div class="row">
                       <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
                         <div class="page-wrapper">
-                          <div class="blog-list clearfix">
                             <?php
                             $getLastArticle=$frontend->getLastArticle(3);
                             if ($getLastArticle->num_rows>0) {
+                              ?>
+                          <div class="blog-list clearfix">
+                         <?php
                               while ($articles=$frontend->getRow($getLastArticle)) {
                               $getCat=$frontend->getGroup($articles['cat_id']);
                               $url2=$frontend->createSeoUrl("articles/$articles[id]/$articles[title]/");
@@ -110,6 +112,7 @@
                                   <?php
                                   }
                                 ?>
+                                </div><!-- end blog-list -->
                                 <button id="btn_more" class="btn btn-info col-md-12" style="height: 30px;opacity:0.8;cursor: pointer;">مقالات بیشتر</button>
                                 <?php 
                                 }else{
@@ -120,7 +123,6 @@
                                 ?>
                                 
                                 
-                                </div><!-- end blog-list -->
                                 </div><!-- end page-wrapper -->
                                 </div><!-- end col -->
                                 <!-- sidebar -->
